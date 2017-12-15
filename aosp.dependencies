@@ -1,0 +1,38 @@
+[
+  {
+    "remote":      "github",
+    "repository":  "GZR-Kernels/kernel_motorola_msm8953",
+    "target_path": "kernel/motorola/msm8953",
+    "branch":      "8.0"
+  },
+  {
+    "remote":      "github",
+    "repository":  "BigTopKrazies/vendor_motorola_sanders",
+    "target_path": "vendor/motorola/sanders",
+    "branch":      "8.0"
+  }, 
+  {
+    "remote":      "github",
+    "repository":  "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch":      "lineage-15.0"
+  },
+  {
+    "remote":      "github",
+    "repository":  "boulzordev/android_hardware_qcom_display",
+    "target_path": "hardware/qcom/display-caf/msm8937",
+    "branch":      "bzr-8.0-8937"
+  },
+  {
+    "remote":      "github",
+    "repository":  "boulzordev/android_hardware_qcom_media",
+    "target_path": "hardware/qcom/media-caf/msm8937",
+    "branch":      "bzr-8.0-8937"
+  },
+  {
+    "remote":      "github",
+    "repository":  "boulzordev/android_hardware_qcom_audio",
+    "target_path": "hardware/qcom/audio-caf/msm8937",
+    "branch":      "bzr-8.0-8937"
+  }  
+]
