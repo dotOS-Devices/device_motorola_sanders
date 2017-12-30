@@ -24,6 +24,10 @@
     -->
     <integer name="config_fingerprintSensorLocation">1</integer>
 
-  <!-- Whether to enable "show operator name in the status bar" setting -->
-  <bool name="config_showOperatorNameInStatusBar">true</bool>
+    <!-- Device specific doze package -->
+    <string name="config_customDozePackage">org.lineageos.settings.device/org.lineageos.settings.device.DozeSettingsActivity</string>
+
+    <!-- Device specific gesture package -->
+    <string name="config_customGesturePackage">org.lineageos.settings.device/org.lineageos.settings.device.ActionsPreferenceActivity</string>
+
 </resources>
