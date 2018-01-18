@@ -13,9 +13,9 @@
   }, 
   {
     "remote":      "github",
-    "repository":  "LineageOS/android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings",
-    "branch":      "lineage-15.0"
+    "repository":  "PixelExperience/packages_resources_MotoActions",
+    "target_path": "packages/resources/MotoActions",
+    "branch":      "oreo-mr1"
   },
   {
     "remote":      "github",
