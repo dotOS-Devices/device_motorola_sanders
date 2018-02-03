@@ -2,8 +2,10 @@
 # system.prop for sanders
 #
 
-# Android Run Time
-ro.sys.fw.dex2oat_thread_count=8
+# dex2oat
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-threads=8
+dalvik.vm.image-dex2oat-threads=8
 
 # Audio
 audio.deep_buffer.media=true
