@@ -358,19 +358,7 @@
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
 
-    <!-- Whether to show navbar when fingerprint sensor is busy -->
-    <!--<bool name="config_showNavbarWhenFingerprintSensorBusy">true</bool>-->
-
-    <!-- Whether to show navbar when keyguard host view is visible -->
-    <!--<bool name="config_showNavbarInKeyguard">true</bool>-->
-    
     <!-- Whether notify fingerprint client of successful cancelled authentication-->
     <bool name="config_notifyClientOnFingerprintCancelSuccess">true</bool>
 
-    <!-- Should proximity check also affect fingerprint reader
-    <bool name="config_proximityCheckOnFingerprintWake">true</bool>-->
-    
-    <!--  Whether to show navbar in lock task mode -->
-    <!--<bool name="config_showNavbarInLockTaskMode">true</bool>-->
-    
 </resources>
