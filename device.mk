@@ -461,7 +461,6 @@ PRODUCT_PACKAGES += \
     libcld80211 \
     libwpa_client \
     wcnss_service \
-    wificond \
     wifilogd \
     wpa_supplicant \
     wpa_supplicant.conf \
