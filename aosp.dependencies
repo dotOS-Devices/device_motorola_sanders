@@ -1,7 +1,7 @@
 [
   {
     "remote":      "github",
-    "repository":  "GZR-Kernels/kernel_motorola_msm8953_sanders",
+    "repository":  "Keertesh19/kernel_motorola_msm8953",
     "target_path": "kernel/motorola/msm8953",
     "branch":      "8.1-ods"
   },
@@ -19,20 +19,20 @@
   },
   {
     "remote":      "github",
-    "repository":  "boulzordev/android_hardware_qcom_display",
-    "target_path": "hardware/qcom/display-caf/msm8937",
-    "branch":      "bzr-8.1-8937"
+    "repository":  "LineageOS/android_hardware_qcom_display",
+    "target_path": "hardware/qcom/display-caf/msm8996",
+    "branch":      "staging/lineage-15.1-caf-8996"
   },
   {
     "remote":      "github",
-    "repository":  "boulzordev/android_hardware_qcom_media",
-    "target_path": "hardware/qcom/media-caf/msm8937",
-    "branch":      "bzr-8.1-8937"
+    "repository":  "LineageOS/android_hardware_qcom_media",
+    "target_path": "hardware/qcom/media-caf/msm8996",
+    "branch":      "staging/lineage-15.1-caf-8996"
   },
   {
     "remote":      "github",
-    "repository":  "boulzordev/android_hardware_qcom_audio",
-    "target_path": "hardware/qcom/audio-caf/msm8937",
-    "branch":      "bzr-8.1-8937"
+    "repository":  "LineageOS/android_hardware_qcom_audio",
+    "target_path": "hardware/qcom/audio-caf/msm8996",
+    "branch":      "staging/lineage-15.1-caf-8996"
   }  
 ]
