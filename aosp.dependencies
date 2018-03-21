@@ -16,23 +16,5 @@
     "repository":  "PixelExperience/packages_resources_MotoActions",
     "target_path": "packages/resources/MotoActions",
     "branch":      "oreo-mr1"
-  },
-  {
-    "remote":      "github",
-    "repository":  "LineageOS/android_hardware_qcom_display",
-    "target_path": "hardware/qcom/display-caf/msm8996",
-    "branch":      "staging/lineage-15.1-caf-8996"
-  },
-  {
-    "remote":      "github",
-    "repository":  "LineageOS/android_hardware_qcom_media",
-    "target_path": "hardware/qcom/media-caf/msm8996",
-    "branch":      "staging/lineage-15.1-caf-8996"
-  },
-  {
-    "remote":      "github",
-    "repository":  "LineageOS/android_hardware_qcom_audio",
-    "target_path": "hardware/qcom/audio-caf/msm8996",
-    "branch":      "staging/lineage-15.1-caf-8996"
-  }  
+  }
 ]
