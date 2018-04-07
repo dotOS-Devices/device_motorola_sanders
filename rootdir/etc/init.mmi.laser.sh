@@ -1,4 +1,4 @@
-#!/system/vendor/bin/sh
+#!/system/bin/sh
 scriptname=${0##*/}
 dbg_on=1
 debug()

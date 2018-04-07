@@ -1,4 +1,4 @@
-#!/system/vendor/bin/sh
+#!/system/bin/sh
 
 PATH=/sbin:/system/sbin:/system/bin:/system/xbin
 export PATH
