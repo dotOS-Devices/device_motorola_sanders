@@ -33,7 +33,6 @@ on post-fs
     mkdir /persist/public 0755 oem_5004 oem_5004
     mkdir /persist/public/atvc 0770 oem_5012 shell
     mkdir /persist/public/battd 0755 oem_5000 oem_5004
-    mkdir /persist/public/att_dm 0775 radio oem_5004
     mkdir /persist/public/hiddenmenu 0755 radio radio
     mkdir /persist/public/hiddenmenu/data 0775 system oem_5004
     mkdir /persist/public/locale 0700 system system
