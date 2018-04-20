@@ -1,20 +1,14 @@
 [
   {
-    "remote":      "github",
-    "repository":  "rajadeja/android_kernel_motorola_msm8953",
+    "repository":  "android_kernel_motorola_msm8953",
     "target_path": "kernel/motorola/msm8953",
-    "branch":      "dot-o"
   },
   {
-    "remote":      "github",
-    "repository":  "rajadeja/android_vendor_motorola_sanders",
+    "repository":  "proprietary_vendor_motorola_sanders",
     "target_path": "vendor/motorola/sanders",
-    "branch":      "dot-o"
   }, 
   {
-    "remote":      "github",
-    "repository":  "rajadeja/packages_resources_MotoActions",
+    "repository":  "android_packages_resources_MotoActions",
     "target_path": "packages/resources/MotoActions",
-    "branch":      "dot-o"
   }
 ]
