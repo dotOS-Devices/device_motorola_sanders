@@ -304,7 +304,6 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.qcom.ril.sh \
     init.qcom.fm.sh \
     wlan_carrier_bin.sh
 
@@ -342,8 +341,7 @@ PRODUCT_COPY_FILES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    ims-ext-common \
-    telephony-ext
+    ims-ext-common
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -357,6 +355,13 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     libqsap_shim
+
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Thermal
 PRODUCT_COPY_FILES += \
