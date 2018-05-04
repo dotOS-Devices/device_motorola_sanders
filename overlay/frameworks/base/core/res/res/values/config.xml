@@ -374,5 +374,8 @@
 
     <!-- Flag specifying whether VT is available on device -->
     <bool name="config_device_vt_available">true</bool>
-	
+
+    <!-- Whether device has turbo power charging support -->	
+    <bool name="config_hasTurboPowerCharger">true</bool>
+
 </resources>
