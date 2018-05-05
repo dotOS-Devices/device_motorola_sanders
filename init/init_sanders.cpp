@@ -69,13 +69,6 @@ void vendor_load_properties()
     if (platform != ANDROID_TARGET)
         return;
 
-    // fingerprint
-    property_override("ro.build.description", "sanders-user 7.1.1 NPSS26.116-61-2 7 release-keys");
-    property_override("ro.build.fingerprint", "motorola/sanders/sanders:7.1.1/NPSS26.116-61-2/7:user/release-keys"); // safetynet hax
-
-    std::string sku = GetProperty("ro.boot.hardware.sku", "");
-    property_set("ro.product.model", sku.c_str());
-
     // rmt_storage
     std::string device = GetProperty("ro.boot.device", "");
     std::string radio = GetProperty("ro.boot.radio", "");
