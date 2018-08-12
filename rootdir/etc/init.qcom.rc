@@ -82,6 +82,8 @@ on init
     write /dev/stune/foreground/schedtune.prefer_idle 1
     write /dev/stune/top-app/schedtune.prefer_idle 1
     write /dev/stune/top-app/schedtune.boost 10
+    write /dev/stune/rt/schedtune.boost 0
+    write /dev/stune/rt/schedtune.prefer_idle 1
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
@@ -311,8 +313,9 @@ on boot
     chmod 0660 /sys/devices/platform/kcal_ctrl.0/kcal_val
 
     write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-3,6-7
-    write /dev/cpuset/background/cpus 0-3
+    write /dev/cpuset/foreground/cpus 0-3,6-7=
+    write /dev/cpuset/background/cpus 0-1
+    write /dev/cpuset/restricted/cpus 0-3
     write /dev/cpuset/system-background/cpus 0-3
 
     # add a cpuset for the camera daemon
@@ -595,7 +598,7 @@ service vendor.adsprpcd /vendor/bin/adsprpcd
     user media
     group media
 
-#service vendor.energy-awareness /vendor/bin/energy-awareness
+#service energy-awareness /vendor/bin/energy-awareness
 #    class main
 #    user root
 #    group system
@@ -800,6 +803,15 @@ service wlan_logging /system/bin/cnss_diag -q -f
     disabled
     oneshot
 
+#service cnss-daemon /vendor/bin/cnss-daemon -n -l
+#    class late_start
+#    user system
+#    group system inet net_admin wifi
+#    capabilities NET_ADMIN
+#
+#on property:sys.shutdown.requested=*
+#    stop cnss-daemon
+
 service dhcpcd_bt-pan /system/bin/dhcpcd -BKLG
     class late_start
     disabled
@@ -961,19 +973,17 @@ on property:sys.boot_completed=1
 
     # governor settings
     write /sys/devices/system/cpu/cpu0/online 1
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "blu_schedutil"
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "schedutil"
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 652800
 
-    write /sys/devices/system/cpu/cpufreq/blu_schedutil/up_rate_limit_us 1000
-    write /sys/devices/system/cpu/cpufreq/blu_schedutil/down_rate_limit_us 10000
-    write /sys/devices/system/cpu/cpufreq/blu_schedutil/iowait_boost_enable 0
+    write /sys/devices/system/cpu/cpufreq/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpufreq/schedutil/down_rate_limit_us 20000
+    write /sys/devices/system/cpu/cpufreq/schedutil/iowait_boost_enable 0
 
     # Enable input boost configuration
-    write /sys/module/cpu_boost/parameters/input_boost 1
     write /sys/module/cpu_boost/parameters/input_boost_freq "0:1036800"
     write /sys/module/cpu_boost/parameters/dynamic_stune_boost 5
-    write /sys/module/cpu_boost/parameters/input_boost_ms 150
-    write /sys/module/msm_performance/parameters/touchboost 0
+    write /sys/module/cpu_boost/parameters/input_boost_ms 350
 
     # re-enable thermal & BCL core_control now
     write /sys/module/msm_thermal/core_control/enabled 1
