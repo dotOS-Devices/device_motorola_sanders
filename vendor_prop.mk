@@ -99,6 +99,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.core_ctl_min_cpu=2 \
     ro.vendor.qti.core_ctl_max_cpu=4
 
+# CloudFare DNS
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.dns1=1.1.1.1 \
+    net.dns2=1.0.0.1 \
+    net.rmnet0.dns1=1.1.1.1 \
+    net.rmnet0.dns2=1.0.0.1 \
+    net.gprs.dns1=1.1.1.1 \
+    net.gprs.dns2=1.0.0.1 \
+    net.ppp0.dns1=1.1.1.1 \
+    net.ppp0.dns2=1.0.0.1 \
+    net.wlan0.dns1=1.1.1.1 \
+    net.wlan0.dns2=1.0.0.1 \
+    net.eth0.dns1=1.1.1.1 \
+    net.eth0.dns2=1.0.0.1 \
+    dhcp.eth0.dns1=1.1.1.1 \
+    dhcp.eth0.dns2=1.0.0.1 \
+    dhcp.wlan0.dns1=1.1.1.1 \
+    dhcp.wlan0.dns2=1.0.0.1
+
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapgrowthlimit=192m \
