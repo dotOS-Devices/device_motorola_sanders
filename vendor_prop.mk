@@ -1,3 +1,4 @@
+
 #
 # vendor props for sanders
 #
@@ -303,3 +304,12 @@ persist.radio.sap_silent_pin=1 \
 persist.radio.always_send_plmn=true \
 persist.rcs.supported=1 \
 persist.dbg.ims_volte_enable=1 \
+
+# FOSS CONFIGS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.qcom.dpps.sensortype=3
+    ro.qualcomm.display.paneltype=1
+    ro.qualcomm.foss=1
+    config.foss.xml=1
+    config.foss.path=/vendor/etc/FOSSConfig.xml
+
