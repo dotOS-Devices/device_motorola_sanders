@@ -36,7 +36,7 @@ import android.os.Handler;
 import android.os.Message;
 
 import com.moto.actions.R;
-import com.moto.actions.utilsKCAL;
+import com.moto.actions.UtilsKCAL;
 
 public class SeekBarPreference extends Preference {
 

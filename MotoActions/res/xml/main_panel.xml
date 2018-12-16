@@ -22,7 +22,8 @@
         android:key="kcal"
         android:title="@string/kcal_title"
         android:summary="@string/kcal_summary"
-        android:persistent="false" >
+        android:persistent="false" 
+	android:icon="@drawable/ic_settings_kcal">
         <intent android:action="android.intent.action.MAIN"
                 android:targetPackage="com.moto.actions"
                 android:targetClass="com.moto.actions.DisplayCalibration" />
