@@ -259,6 +259,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 
+# Encryption
+TARGET_KEYMASTER_SKIP_WAITING_FOR_QSEE := true
+
 # Wifi
 BOARD_HAS_QCOM_WLAN              := true
 BOARD_HAS_QCOM_WLAN_SDK          := true
