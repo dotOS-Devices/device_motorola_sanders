@@ -348,6 +348,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="concurrent-instances" max="16" />
         </MediaCodec>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <MediaCodec name="OMX.qcom.video.decoder.vp9.secure" type="video/x-vnd.on2.vp9" >
             <Quirk name="requires-allocate-on-input-ports" />
@@ -362,6 +363,8 @@ Only the three quirks included above are recognized at this point:
             <Limit name="concurrent-instances" max="2" />
         </MediaCodec>
 >>>>>>> 1bbf10cc... sanders: update media codecs and profiles from deen PPK29.68-16-8
+=======
+>>>>>>> 4bd303c5... sanders: update media codecs from LA.UM.7.6.r1-03700-89xx.0
         <MediaCodec name="OMX.qcom.video.decoder.hevc" type="video/hevc" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
