@@ -89,7 +89,7 @@
         <!-- Display Calibration -->
         <activity
             android:name="com.moto.actions.DisplayCalibration"
-            android:label="@string/kcal_title">
+            android:label="@string/kcal_title"
             android:theme="@style/MotoActions">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
