@@ -19,7 +19,7 @@ if [ "$sku" = "XT1802" ]; then
     echo "insmod /vendor/lib/modules/isdbt.ko" >> /vendor/bin/init.mmi.boot.sh
 else
     # If not... Remove DTV APKs and libs
-    rm -r /vendor/priv-app/DTVPlayer
-    rm -r /vendor/priv-app/DTVService
+    rm -r /system/priv-app/DTVPlayer
+    rm -r /system/priv-app/DTVService
     rm /vendor/lib*/libdtv*.so
 fi
