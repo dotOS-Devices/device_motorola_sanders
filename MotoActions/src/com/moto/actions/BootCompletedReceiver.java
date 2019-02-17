@@ -53,11 +53,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         }
 
         context.startService(new Intent(context, ServiceWrapper.class));
-        new DiracUtils(context).onBootCompleted();
-		DisplayCalibration.restore(context);
-    }
- 
-        DiracUtils.initialize();
+        new DiracUtils(context);
    }
 
     private ServiceConnection serviceConnection = new ServiceConnection() {
