@@ -57,6 +57,9 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 		DisplayCalibration.restore(context);
     }
  
+        DiracUtils.initialize();
+   }
+
     private ServiceConnection serviceConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName className, IBinder service) {
