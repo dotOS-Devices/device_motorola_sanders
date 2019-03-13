@@ -71,7 +71,7 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CONFIG := sanders_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_PATH := $(PWD)/prebuilts/clang/host/$(HOST_OS)-x86/clang-5220042/bin
+TARGET_KERNEL_CLANG_PATH := $(PWD)/prebuilts/clang/host/$(HOST_OS)-x86/clang-5352347/bin
 #TARGET_USE_SDCLANG := true
 
 # Audio
@@ -253,4 +253,4 @@ WIFI_DRIVER_FW_PATH_P2P          := "p2p"
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2018-12-5
+VENDOR_SECURITY_PATCH := 2019-02-05
