@@ -1,0 +1,18 @@
+[
+  {
+    "repository": "android_vendor_motorola_sanders",
+    "target_path": "vendor/motorola/sanders"
+  },
+  {
+    "repository": "android_kernel_motorola_sanders",
+    "target_path": "kernel/motorola/msm8953"
+  },
+  {
+    "repository": "android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings"
+  },
+  {
+    "repository": "android_prebuilts_clang_host_linux-x86_clang-5352347",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-5352347"
+  }
+]
