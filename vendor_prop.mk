@@ -340,3 +340,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     config.foss.xml=1 \
     config.foss.path=/vendor/etc/FOSSConfig.xml
 
+#VOLUME STEPS
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.config.vc_call_vol_steps=15 \
+ro.config.media_vol_steps=45 \
+audio.safemedia.bypass=true
