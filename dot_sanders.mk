@@ -24,7 +24,7 @@ $(call inherit-product, device/motorola/sanders/device.mk)
 # Inherit from Sanders-Vendor
 $(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
 
-# Inherit some Common Rom Stuff.
+# Inherit some dotOS Stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
 
 # Boot animation
