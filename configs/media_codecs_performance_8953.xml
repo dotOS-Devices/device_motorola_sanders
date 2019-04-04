@@ -80,15 +80,7 @@
             <Limit name="measured-frame-rate-1920x1088" range="88-88" />
         </MediaCodec>
         <MediaCodec name="OMX.qcom.video.decoder.hevc" type="video/hevc" update="true">
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <Limit name="measured-frame-rate-352x288" range="594-594" />
-=======
             <Limit name="measured-frame-rate-352x288" range="191-191" />
->>>>>>> 1bbf10cc... sanders: update media codecs and profiles from deen PPK29.68-16-8
-=======
-            <Limit name="measured-frame-rate-352x288" range="594-594" />
->>>>>>> 4bd303c5... sanders: update media codecs from LA.UM.7.6.r1-03700-89xx.0
             <Limit name="measured-frame-rate-640x360" range="188-188" />
             <Limit name="measured-frame-rate-720x480" range="338-338" />
             <Limit name="measured-frame-rate-1280x720" range="241-241" />
