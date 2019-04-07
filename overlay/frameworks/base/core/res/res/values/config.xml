@@ -464,8 +464,8 @@
           16 - App switch
           32 - Camera
        For example, a device with Back, Home and AppSwitch keys would set this
-       config to 19. -->
-    <integer name="config_deviceHardwareKeys">1</integer>
+       config to 19. 
+    <integer name="config_deviceHardwareKeys">1</integer> -->
 
     <!-- Support in Surfaceflinger for blur layers.
          NOTE: This requires additional hardware-specific code. -->
@@ -544,10 +544,7 @@
 
     <!-- Whether the always on display mode is available. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
-
-    <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
-    <bool name="config_displayBlanksAfterDoze">true</bool>
-
+    
     <!-- Whether device has turbo power charging support -->
     <bool name="config_hasTurboPowerCharger">true</bool>
 
