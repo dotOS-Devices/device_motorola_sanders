@@ -91,7 +91,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dpm.feature=0 \
     persist.sys.cnd.iwlan=1
 
-#property to enable fingerprint
+# Property To Enable Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.qfp=false
 
@@ -301,7 +301,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.sensors.glance_approach=false \
     ro.hardware.sensors=sanders
 
-#Trim properties
+# Trim properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
 
@@ -331,7 +331,11 @@ persist.radio.videopause.mode=1 \
 persist.radio.sap_silent_pin=1 \
 persist.radio.always_send_plmn=true \
 persist.rcs.supported=1 \
-persist.dbg.ims_volte_enable=1
+persist.dbg.ims_volte_enable=1 \
+persist.dbg.volte-avail_ovr=1 \
+persist.dbg.vt_avail_ovr=1 \
+persist.dbg.wfc-avail_ovr-1 \
+persist.volte_enabled_by_hw=1
 
 # FOSS CONFIGS
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -363,3 +367,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.dha_th_rate=2.3
     ro.config.sdha_apps_bg_max=64
     ro.config.sdha_apps_bg_min=8
+
+# USB debugging at boot
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
+
+# Default Lte selection
+PRODUCT_PROPERTY_OVERRIDES += \
+telephony.lteOnGsmDevice=1 \
+ro.telephony.default_network=9 \
+ro.ril.def.preferred.network=9
