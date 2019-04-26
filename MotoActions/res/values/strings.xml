@@ -89,40 +89,14 @@
    <string name="haptic_feedback">Haptic feedback</string>
    <string name="haptic_feedback_summary">Vibrate when a touchscreen gesture is detected</string>
 
-    <!-- Spectrum Profiles -->
-    <string name="spectrum_title">Kernel Profile Manager</string>
-    <string name="spectrum_summary">%1$s</string>
-
-    <!-- Kcal -->
-    <string name="kcal_title">Display Calibration</string>
-    <string name="kcal_summary">Display color calibration using KCAL</string>
-    <string name="kcal_enabled_title">Enable KCAL</string>
-    <string name="kcal_enabled_summary">Turn on display calibration using KCAL</string>
-    <string name="kcal_red">Red</string>
-    <string name="kcal_green">Green</string>
-    <string name="kcal_blue">Blue</string>
-    <string name="kcal_saturation">Saturation</string>
-    <string name="kcal_contrast">Contrast</string>
-    <string name="menu_reset">Reset</string>
-    <string name="kcal_color_temp">Color temperature (K)</string>
-    <string name="kcal_hue">Hue</string>
-    <string name="kcal_value">Value</string>
-    <string name="kcal_greyscale_title">Greyscale</string>
-    <string name="kcal_greyscale_summary">Fully disable saturation</string>
-    <string name="presets_list_title">Load KCAL preset</string>
-    <string name="default_values">Default</string>
-    <string name="version_1">Version 1</string>
-    <string name="version_2">Version 2</string>
-    <string name="version_3">Version 3</string>
-    <string name="triluminous">Triluminous</string>
-    <string name="deep_black_and_white">Deep Black and White</string>
-    <string name="deep_natural">Deep Natural</string>
-    <string name="cool_amoled">Cool Amoled</string>
-    <string name="extreme_amoled">Extreme Amoled</string>
-    <string name="warm_amoled">Warm Amoled</string>
-    <string name="hybrid_mamba">Hybrid Mamba</string>
-
     <!-- Dirac settings -->
+    <!-- Label for feature switch [CHAR LIMIT=30] -->
+    <string name="switch_bar_on">On</string>
+
+    <!-- Label for feature switch [CHAR LIMIT=30] -->
+    <string name="switch_bar_off">Off</string>
+
+    <string name="sound_title">Dirac</string>
     <string name="dirac_title">Dirac sound enhancer</string>
     <string name="dirac_summary">Optimize audio quality</string>
     <string name="dirac_headset_title">Choose headphone type</string>
@@ -162,4 +136,44 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
+
+    <!-- Spectrum Profiles -->
+    <string name="spectrum_title">Kernel Profile</string>
+    <string name="spectrum_summary">Choose your kernel profile</string>
+    <string name="spectrum_dialogTitle">Choose your kernel profile</string>
+ 
+    <!-- Headers -->
+    <string name="displayheader">Display</string>
+    <string name="gesturesheader">Gestures</string>
+    <string name="extrasheader">Extras</string>
+
+    <!-- Kcal -->
+    <string name="kcal_title">Display Calibration</string>
+    <string name="kcal_summary">Display color calibration</string>
+    <string name="kcal_enabled_title">Enable KCAL</string>
+    <string name="kcal_enabled_summary">Turn on display calibration</string>
+    <string name="kcal_red">Red</string>
+    <string name="kcal_green">Green</string>
+    <string name="kcal_blue">Blue</string>
+    <string name="kcal_saturation">Saturation</string>
+    <string name="kcal_contrast">Contrast</string>
+    <string name="menu_reset">Reset</string>
+    <string name="kcal_color_temp">Color temperature (K)</string>
+    <string name="kcal_hue">Hue</string>
+    <string name="kcal_value">Value</string>
+    <string name="kcal_greyscale_title">Greyscale</string>
+    <string name="kcal_greyscale_summary">Fully disable saturation</string>
+    <string name="presets_list_title">Load KCAL preset</string>
+    <string name="default_values">Default</string>
+    <string name="version_1">Version 1</string>
+    <string name="version_2">Version 2</string>
+    <string name="version_3">Version 3</string>
+    <string name="triluminous">Triluminous</string>
+    <string name="deep_black_and_white">Deep Black and White</string>
+    <string name="deep_natural">Deep Natural</string>
+    <string name="cool_amoled">Cool Amoled</string>
+    <string name="extreme_amoled">Extreme Amoled</string>
+    <string name="warm_amoled">Warm Amoled</string>
+    <string name="hybrid_mamba">Hybrid Mamba</string>
+
 </resources>
