@@ -554,4 +554,10 @@
     <!-- Whether the device has fingeprint sensor or not -->
     <bool name="config_hasFingerprintSensor">true</bool>
 
+    <!-- Show battery fully charged notification -->
+    <bool name="config_showBatteryFullyChargedNotification">true</bool>
+
+    <!-- This will disable vendor mismatch error and fix annoying popup after every boot -->
+    <bool name="config_show_vendor_mismatch_message">false</bool>
+
 </resources>
