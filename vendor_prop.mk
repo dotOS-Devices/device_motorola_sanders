@@ -129,6 +129,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
     dalvik.vm.heaptargetutilization=0.75
 
+# Data
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.aosp_usr_pref_sel=true 
+    
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
