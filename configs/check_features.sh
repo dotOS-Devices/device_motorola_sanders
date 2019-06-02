@@ -23,3 +23,11 @@ else
     rm -r /system/priv-app/DTVService
     rm /vendor/lib*/libdtv*.so
 fi
+
+if [ "$sku" = "XT1804" ]; then
+    # XT1804 has additional thermal configs
+    mv /vendor/etc/thermal-engine-INDIA.conf /vendor/etc/thermal-engine.conf
+else
+    rm /vendor/etc/thermal-engine-INDIA.conf
+fi
+
