@@ -6,8 +6,6 @@ add_hwservice( init, hal_camera_hwservice);
 
 allow init platform_app:binder transfer;
 
-allow init sysfs_devices_system_cpu:dir write;
-allow init sysfs_lowmemorykiller:dir write;
 allow init system_app:binder transfer;
 allow init system_data_file:file lock;
 
