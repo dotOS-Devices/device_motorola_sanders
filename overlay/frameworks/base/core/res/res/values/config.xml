@@ -561,4 +561,7 @@
     <!-- This will disable vendor mismatch error and fix annoying popup after every boot -->
     <bool name="config_show_vendor_mismatch_message">false</bool>
 
+    <!-- Enable qcom fw boost -->
+    <bool name="config_enableQcCpuBoost">true</bool>
+
 </resources>
