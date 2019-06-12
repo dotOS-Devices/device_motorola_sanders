@@ -183,6 +183,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # IMS
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.radio.jbims=1 \
     persist.radio.RATE_ADAPT_ENABLE=1 \
     persist.radio.VT_ENABLE=1 \
     persist.radio.VT_HYBRID_ENABLE=1 \
@@ -401,7 +402,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.debuggable=1
 
 # Default Lte selection
-PRODUCT_PROPERTY_OVERRIDES += \
-telephony.lteOnGsmDevice=1 \
-ro.telephony.default_network=9 \
-ro.ril.def.preferred.network=9
+#PRODUCT_PROPERTY_OVERRIDES += \
+#   telephony.lteOnGsmDevice=1 \
+#    ro.telephony.default_network=9 \
+#    ro.ril.def.preferred.network=9
