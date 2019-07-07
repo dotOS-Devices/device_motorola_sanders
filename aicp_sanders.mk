@@ -23,14 +23,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 $(call inherit-product, device/motorola/sanders/device.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
-PRODUCT_NAME := aosp_sanders
+PRODUCT_NAME := aicp_sanders
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
