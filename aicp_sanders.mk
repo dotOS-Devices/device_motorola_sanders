@@ -40,9 +40,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Moto G5S Plus" \
     PRIVATE_BUILD_DESC="sanders-user 8.1.0 OPS28.65-36 9fea release-keys"
 
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+DEVICE_MAINTAINERS="Lucas Ponez (Pintoslp)"
+
 # for specific
 $(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
 
 # FINGERPRINT
-BUILD_FINGERPRINT := google/walleye/walleye:9/PPP3.180510.008/4811556:user/release-keys 
+BUILD_FINGERPRINT := google/walleye/walleye:9/PPP3.180510.008/4811556:user/release-keys
 VENDOR_BUILD_FINGERPRINT := google/walleye/walleye:9/PPP3.180510.008/4811556:user/release-keys
