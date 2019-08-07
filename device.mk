@@ -176,6 +176,24 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
+# GPS
+PRODUCT_PACKAGES += \
+    libgnss \
+    libgnsspps \
+    android.hardware.gnss@1.1-impl-qti \
+    android.hardware.gnss@1.1-service-qti \
+    libqsap_sdk \
+    libqsap_shim
+
+PRODUCT_PACKAGES += \
+    apdr.conf \
+    flp.conf \
+    gps.conf \
+    izat.conf \
+    lowi.conf \
+    sap.conf \
+    xtwifi.conf
+
 # health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \

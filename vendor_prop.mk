@@ -320,4 +320,12 @@ persist.radio.data_lte_sys_ind=1
 
 # Create Swap disk, if below sys-prop enabled & also if device has lower (< 1 GB) RAM
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.swap=true
+    ro.qcom.dpps.sensortype=3
+    ro.qualcomm.display.paneltype=1
+    ro.qualcomm.foss=1
+    config.foss.xml=1
+    config.foss.path=/vendor/etc/FOSSConfig.xml
+
+# GPS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.location.osnlp.region.package=com.google.android.gms
