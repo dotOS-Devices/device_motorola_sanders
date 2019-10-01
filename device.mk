@@ -337,7 +337,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/qti_whitelist.xml
 
 # Preopt SystemUI
-PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    Settings \
+    SystemUI
 
 # Ramdisk
 PRODUCT_PACKAGES += \
