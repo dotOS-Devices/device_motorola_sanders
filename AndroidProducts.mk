@@ -15,3 +15,8 @@
 
 PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/aicp_sanders.mk
+
+COMMON_LUNCH_CHOICES := \
+	aicp_sanders-userdebug \
+        aicp_sanders-userdebug \
+        aicp_sanders-eng
