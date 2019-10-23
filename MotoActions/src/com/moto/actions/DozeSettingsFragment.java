@@ -17,10 +17,10 @@
 package com.moto.actions;
 
 import android.os.Bundle;
-import android.support.v14.preference.PreferenceFragment;
+import androidx.preference.PreferenceFragment;
 import android.provider.Settings;
-import android.support.v7.preference.Preference;
-import android.support.v14.preference.SwitchPreference;
+import androidx.preference.Preference;
+import androidx.preference.SwitchPreference;
 import android.view.MenuItem;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,7 +30,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 public class DozeSettingsFragment extends PreferenceFragment {
-    
+
     private SwitchPreference mHandwavePreference;
     private SwitchPreference mPickupPreference;
 
@@ -39,7 +39,7 @@ public class DozeSettingsFragment extends PreferenceFragment {
 
     private String KEY_GESTURE_HAND_WAVE = "gesture_hand_wave";
     private String KEY_GESTURE_PICK_UP = "gesture_pick_up";
-    
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
