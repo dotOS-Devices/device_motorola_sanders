@@ -205,6 +205,13 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 289406976   #    20580 * 1024 mmcblk0p38
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4294967296    #  4194304 * 1024 mmcblk0p53
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 25614597120 # 25014255 * 1024 mmcblk0p54
 
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /mnt/vendor/persist:/persist \
+    /vendor/firmware_mnt:/firmware \
+    /vendor/dsp:/dsp \
+
+BOARD_ROOT_EXTRA_FOLDERS := dsp firmware fsg persist
+
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
