@@ -2,8 +2,8 @@
 #binder_call(init, hwservicemanager);
 # binder_call(init, servicemanager);
 
-allow init hwservicemanager:binder call;
-allow init mm-qcamerad:binder transfer;
+add_hwservice( init, hal_camera_hwservice);
+
 allow init platform_app:binder transfer;
 
 allow init sysfs_devices_system_cpu:dir write;
