@@ -72,11 +72,17 @@
         <permission name="android.permission.READ_BLOCKED_NUMBERS" />
         <permission name="android.permission.VIBRATE" />
     </privapp-permissions>
+ 
+    <privapp-permissions package="com.moto.actions">
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+    </privapp-permissions>
+     
+    <privapp-permissions package="com.motorola.dtv">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
 
-    <privapp-permissions package="com.android.fmradio">
-        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-        <permission name="android.permission.ACCESS_FM_RADIO"/>
-        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+    <privapp-permissions package="com.qualcomm.atfwd">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.fmradio">
