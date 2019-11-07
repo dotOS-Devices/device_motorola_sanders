@@ -33,6 +33,7 @@ PRODUCT_DEVICE := sanders
 PRODUCT_NAME := aicp_sanders
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
+PRODUCT_MODEL := Moto G (5S) Plus
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
