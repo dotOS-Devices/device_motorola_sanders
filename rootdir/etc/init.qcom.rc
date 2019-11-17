@@ -866,8 +866,10 @@ on charger
     write /sys/class/leds/white/trigger "battery-full"
 
 on property:sys.boot_completed=1
-    write /dev/kmsg "Boot completed "
-    setprop sys.io.scheduler bfq
+    write /dev/kmsg "Boot completed"
+    setprop sys.io.scheduler noop
+    write /sys/block/mmcblk0/queue/scheduler noop
+    write /sys/block/mmcblk0rpmb/queue/scheduler noop
 
     # scheduler settings
     write /proc/sys/kernel/sched_window_stats_policy 3
@@ -952,6 +954,14 @@ on property:sys.boot_completed=1
     write /proc/sys/kernel/sched_upmigrate 85
     write /proc/sys/kernel/sched_downmigrate 85
     write /proc/sys/kernel/sched_upmigrate_min_nice 19
+
+    # Adreno Idler
+    write /sys/module/adreno_idler/parameters/adreno_idler_idleworkload 6000
+    write /sys/module/adreno_idler/parameters/adreno_idler_idlewait 18
+    write /sys/module/adreno_idler/parameters/adreno_idler_downdiffrential 24
+
+     # Set initial GPU freq
+    write /sys/class/kgsl/kgsl-3d0/default_pwrlevel 6
 
     # Enable sched guided freq control
     write /sys/devices/system/cpu/cpufreq/interactive/use_sched_load 0
