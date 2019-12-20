@@ -6,8 +6,5 @@ allow netmgrd property_socket:sock_file write;
 #allow netmgrd dnsresolver_service:service_manager find;
 #allow netmgrd netd_service:service_manager find;
 
-allow netmgrd toolbox_exec:file { getattr read open };
-
 allow netmgrd init:unix_stream_socket connectto;
 allow netmgrd property_socket:sock_file write;
-allow netmgrd system_file:file lock;
