@@ -220,8 +220,8 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     telephony-ext
 
-#PRODUCT_BOOT_JARS += \
-    #telephony-ext
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -470,8 +470,8 @@ PRODUCT_PACKAGES += \
     android.hidl.manager-V1.0-java
 
 # Wi-Fi Display
-#PRODUCT_BOOT_JARS += \
-    #WfdCommon
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
