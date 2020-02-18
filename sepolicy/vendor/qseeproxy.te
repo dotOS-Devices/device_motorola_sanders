@@ -1,1 +1,3 @@
-#allow qseeproxy default_android_service:service_manager add;
+allow qseeproxy default_android_service:service_manager add;
+allow qseeproxy binder_device:chr_file { ioctl open read write };
+allow qseeproxy servicemanager:binder { call transfer };
