@@ -325,6 +325,10 @@ PRODUCT_PACKAGES += charger_res_images
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/configs/powerhint.xml:system/etc/powerhint.xml
 
+# QMI
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect
+
 # Qualcomm
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-oem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-oem.xml \
