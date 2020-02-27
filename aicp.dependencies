@@ -13,15 +13,5 @@
     "repository":  "LineageOS/android_system_qcom",
     "target_path": "system/qcom",
     "branch":      "lineage-17.0"
-  },
-  {
-    "repository":  "LineageOS/android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings",
-    "branch":      "lineage-17.0"
-  },
-  {
-    "repository":  "PixelExperience/packages_resources_MotoActions",
-    "target_path": "packages/resources/MotoActions",
-    "branch":      "pie"
   }
 ]
