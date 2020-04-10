@@ -29,13 +29,13 @@
         <SwitchPreference
             android:key="fp_haptic"
             android:defaultValue="0"
-            android:title="@string/haptic_feedback"
-            android:summary="@string/haptic_feedback_summary" />
+            android:title="@string/touchscreen_gesture_haptic_feedback"
+            android:summary="@string/touchscreen_gesture_haptic_feedback_summary" />
 
         <ListPreference
-            android:title="@string/fingerprint_tap_title"
+            android:title="@string/tap_title"
             android:summary="%s"
-            android:dialogTitle="@string/fingerprint_tap_dlg_title"
+            android:dialogTitle="@string/tap_dlg_title"
             android:key="fp_keys"
             android:defaultValue="0"
             android:entries="@array/fp_keys_listArray"
@@ -43,9 +43,9 @@
             android:entryValues="@array/fp_keys_listValues" />
 
         <ListPreference
-            android:title="@string/fingerprint_double_tap_title"
+            android:title="@string/double_tap_title"
             android:summary="%s"
-            android:dialogTitle="@string/fingerprint_double_tap_dlg_title"
+            android:dialogTitle="@string/double_tap_dlg_title"
             android:key="fp_key_dbltap"
             android:defaultValue="0"
             android:entries="@array/fp_keys_listArray"
@@ -53,9 +53,9 @@
             android:entryValues="@array/fp_keys_listValues" />
 
         <ListPreference
-            android:title="@string/fingerprint_long_tap_title"
+            android:title="@string/long_tap_title"
             android:summary="%s"
-            android:dialogTitle="@string/fingerprint_long_tap_dlg_title"
+            android:dialogTitle="@string/long_tap_dlg_title"
             android:key="fp_key_hold"
             android:defaultValue="0"
             android:entries="@array/fp_keys_listArray"
@@ -63,9 +63,9 @@
             android:entryValues="@array/fp_keys_listValues" />
 
         <ListPreference
-            android:title="@string/fingerprint_swipe_left_title"
+            android:title="@string/touchscreen_swipe_left_title"
             android:summary="%s"
-            android:dialogTitle="@string/fingerprint_swipe_left_dlg_title"
+            android:dialogTitle="@string/swipe_left_dlg_title"
             android:key="fp_key_left"
             android:defaultValue="0"
             android:entries="@array/fp_keys_listArray"
@@ -73,9 +73,9 @@
             android:entryValues="@array/fp_keys_listValues" />
 
         <ListPreference
-            android:title="@string/fingerprint_swipe_right_title"
+            android:title="@string/touchscreen_swipe_right_title"
             android:summary="%s"
-            android:dialogTitle="@string/fingerprint_swipe_right_dlg_title"
+            android:dialogTitle="@string/swipe_right_dlg_title"
             android:key="fp_key_right"
             android:defaultValue="0"
             android:entries="@array/fp_keys_listArray"
@@ -92,14 +92,14 @@
             android:key="fp_haptic_scr_off"
             android:dependency="fp_home_scr_off"
             android:defaultValue="0"
-            android:title="@string/haptic_feedback"
-            android:summary="@string/haptic_feedback_summary" />
+            android:title="@string/touchscreen_gesture_haptic_feedback"
+            android:summary="@string/touchscreen_gesture_haptic_feedback_summary" />
 
         <ListPreference
             android:dependency="fp_home_scr_off"
-            android:title="@string/fingerprint_tap_title"
+            android:title="@string/tap_title"
             android:summary="%s"
-            android:dialogTitle="@string/fingerprint_tap_dlg_title"
+            android:dialogTitle="@string/tap_dlg_title"
             android:key="fp_keys_off"
             android:defaultValue="0"
             android:entries="@array/fp_keys_screen_off_listArray"
@@ -108,9 +108,9 @@
 
         <ListPreference
             android:dependency="fp_home_scr_off"
-            android:title="@string/fingerprint_double_tap_title"
+            android:title="@string/double_tap_title"
             android:summary="%s"
-            android:dialogTitle="@string/fingerprint_double_tap_dlg_title"
+            android:dialogTitle="@string/double_tap_dlg_title"
             android:key="fp_key_dbltap_off"
             android:defaultValue="0"
             android:entries="@array/fp_keys_screen_off_listArray"
@@ -119,9 +119,9 @@
 
         <ListPreference
             android:dependency="fp_home_scr_off"
-            android:title="@string/fingerprint_long_tap_title"
+            android:title="@string/long_tap_title"
             android:summary="%s"
-            android:dialogTitle="@string/fingerprint_long_tap_dlg_title"
+            android:dialogTitle="@string/long_tap_dlg_title"
             android:key="fp_key_hold_off"
             android:defaultValue="0"
             android:entries="@array/fp_keys_screen_off_listArray"
@@ -130,9 +130,9 @@
 
         <ListPreference
             android:dependency="fp_home_scr_off"
-            android:title="@string/fingerprint_swipe_left_title"
+            android:title="@string/touchscreen_swipe_left_title"
             android:summary="%s"
-            android:dialogTitle="@string/fingerprint_swipe_left_dlg_title"
+            android:dialogTitle="@string/swipe_left_dlg_title"
             android:key="fp_key_left_off"
             android:defaultValue="0"
             android:entries="@array/fp_keys_screen_off_listArray"
@@ -141,9 +141,9 @@
 
         <ListPreference
             android:dependency="fp_home_scr_off"
-            android:title="@string/fingerprint_swipe_right_title"
+            android:title="@string/touchscreen_swipe_right_title"
             android:summary="%s"
-            android:dialogTitle="@string/fingerprint_swipe_right_dlg_title"
+            android:dialogTitle="@string/swipe_right_dlg_title"
             android:key="fp_key_right_off"
             android:defaultValue="0"
             android:entries="@array/fp_keys_screen_off_listArray"
