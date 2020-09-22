@@ -23,6 +23,5 @@ def FullOTA_InstallEnd(info):
 def ReplaceDeviceConfig(info):
   info.script.Mount("/vendor")
   info.script.AppendExtra('ui_print("Checking NFC and compass support");')
-  info.script.AppendExtra('run_program("/sbin/sh", "/vendor/bin/check_features.sh");')
+  info.script.AppendExtra('run_program("/sbin/sh", "/system/vendor/bin/check_features.sh");')
   info.script.Unmount("/vendor")
-  
