@@ -152,7 +152,9 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libtinyxml \
     libdisplayconfig \
+    libqdMetaData \
     libqdMetaData.system \
+    libqdMetaData.vendor \
     vendor.display.config@1.0 \
     libhwbinder \
     libhwbinder.vendor \
