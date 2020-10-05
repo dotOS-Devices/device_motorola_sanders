@@ -465,6 +465,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf \
     WifiOverlay \
+    TetheringOverlay \
     libcurl \
     libQWiFiSoftApCfg \
     tcpdump
