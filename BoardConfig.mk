@@ -243,6 +243,11 @@ include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /vendor/lib64/libsettings.so|/vendor/lib64/libprotobuf-cpp-full-v29.so \
+    /vendor/lib/libwvhidl.so|/vendor/lib/libprotobuf-cpp-lite-v29.so
+
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_VENDORIMAGE_PARTITION_SIZE := 805306368
