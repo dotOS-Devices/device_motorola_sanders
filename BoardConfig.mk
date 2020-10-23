@@ -245,7 +245,8 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 # Shims
 TARGET_LD_SHIM_LIBS := \
     /vendor/lib64/libsettings.so|/vendor/lib64/libprotobuf-cpp-full-v29.so \
-    /vendor/lib/libwvhidl.so|/vendor/lib/libprotobuf-cpp-lite-v29.so
+    /vendor/lib/libwvhidl.so|/vendor/lib/libprotobuf-cpp-lite-v29.so \
+    /vendor/lib64/libwvhidl.so|/vendor/lib64/libprotobuf-cpp-lite-v29.so
 
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
