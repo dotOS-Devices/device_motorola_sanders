@@ -689,10 +689,6 @@ on property:ro.use_data_netmgrd=false
     # netmgr not supported on specific target
     stop vendor.netmgrd
 
-on property:vendor.sys.listeners.registered=*
-    setprop sys.keymaster.loaded ${vendor.sys.listeners.registered}
-    setprop vendor.sys.keymaster.loaded ${vendor.sys.listeners.registered}
-
 # Adjust socket buffer to enlarge TCP receive window for high bandwidth
 # but only if ro.data.large_tcp_window_size property is set.
 on property:ro.data.large_tcp_window_size=true
