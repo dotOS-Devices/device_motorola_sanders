@@ -52,6 +52,12 @@ group: AID_RADIO
 mode: 0755
 caps: NET_BIND_SERVICE
 
+[vendor/bin/imsdaemon]
+mode: 0755
+user: AID_RADIO
+group: AID_RADIO
+caps: NET_BIND_SERVICE BLOCK_SUSPEND WAKE_ALARM
+
 [vendor/bin/pm-service]
 user: AID_SYSTEM
 group: AID_SYSTEM
