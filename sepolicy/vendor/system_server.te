@@ -18,3 +18,14 @@ allow system_server adb_data_file:file { getattr open read };
 allow system_server adb_data_file:dir { getattr open read search };
 allow system_server persist_camera_prop:file { getattr open read };
 allow system_server hal_fingerprint_fpc:binder { call transfer };
+
+allow system_server userspace_reboot_config_prop:file { getattr open read };
+
+allow system_server userspace_reboot_exported_prop:file { getattr open read };
+
+allow system_server exported_camera_prop:file { getattr open read };
+
+typeattribute system_server system_executes_vendor_violators;
+
+allow system_server vendor_file:file { getattr read };
+allow system_app fm_radio_device:chr_file r_file_perms;
