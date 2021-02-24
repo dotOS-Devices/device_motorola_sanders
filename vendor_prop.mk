@@ -217,7 +217,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # UI
 PRODUCT_PROPERTY_OVERRIDES += \
-    sys.use_fifo_ui=1
+    sys.use_fifo_ui=0
 
 # Netmgr
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -379,18 +379,21 @@ persist.dbg.vt_avail_ovr=1 \
 persist.dbg.wfc_avail_ovr=1 \
 persist.radio.data_lte_sys_ind=1
 
-# Create Swap disk, if below sys-prop enabled & also if device has lower (< 1 GB) RAM
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.swap=true
-
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.fha_enable=true \
-    ro.sys.fw.bg_apps_limit=32 \
-    ro.config.dha_cached_max=16 \
-    ro.config.dha_empty_max=42 \
-    ro.config.dha_empty_init=32 \
-    ro.config.dha_lmk_scale=0.545 \
-    ro.config.dha_th_rate=2.3 \
-    ro.config.sdha_apps_bg_max=64 \
-    ro.config.sdha_apps_bg_min
+    ro.config.fha_enable=false \
+    ro.sys.fw.bg_apps_limit=16 \
+    ro.config.dha_cached_max=8 \
+    ro.config.dha_empty_max=24 \
+    ro.config.dha_empty_init=16 \
+    ro.config.dha_lmk_scale=0.773 \
+    ro.config.dha_th_rate=2 \
+    ro.config.sdha_apps_bg_max=27 \
+    ro.config.sdha_apps_bg_min=3 \
+    ro.config.zram=false \
+    ro.config.dha_cached_min=4 \
+    ro.config.dha_empty_min=8 \
+    ro.cfg.dha_cached_max=10 \
+    ro.cfg.dha_empty_max=24 \
+    ro.config.add_bonusEFK=1 \
+    ro.config.dha_tunnable=1
