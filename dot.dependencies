@@ -1,0 +1,18 @@
+[
+  {
+    "repository":  "android_kernel_motorola_sanders",
+    "target_path": "kernel/motorola/sanders"
+  },
+  {
+    "repository":  "proprietary_vendor_motorola_sanders",
+    "target_path": "vendor/motorola_sanders"
+  },
+  {
+    "repository":  "android_packages_resources_devicesettings-custom",
+    "target_path": "packages/resources/devicesettings-custom"
+  },
+  {
+    "repository":  "android_system_tools_dtbtool",
+    "target_path": "system/tools/dtbtool"
+  }
+]
