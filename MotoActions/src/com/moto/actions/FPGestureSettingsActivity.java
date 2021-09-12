@@ -18,9 +18,9 @@ package com.moto.actions;
 
 import android.os.Bundle;
 
-import android.preference.PreferenceActivity;
+import com.moto.actions.MonetPreferenceActivity;
 
-public class FPGestureSettingsActivity extends PreferenceActivity {
+public class FPGestureSettingsActivity extends MonetPreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

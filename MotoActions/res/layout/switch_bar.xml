@@ -15,34 +15,46 @@
 -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/switch_bar"
     android:layout_width="match_parent"
-    android:layout_height="?android:attr/actionBarSize"
-    android:background="@drawable/switchbar_background"
+    android:layout_height="wrap_content"
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
     android:clickable="true"
+    android:background="@*android:color/monet_background_device_default"
+    android:backgroundTint="@*android:color/monet_background_device_default"
     android:gravity="center">
 
-    <TextView android:id="@+id/switch_text"
-        android:layout_height="wrap_content"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_gravity="center_vertical"
-        android:paddingStart="48dp"
-        android:maxLines="2"
-        android:ellipsize="end"
-        android:textAppearance="@android:style/TextAppearance.Material.Title"
-        android:textColor="?android:attr/textColorPrimary"
-        android:textAlignment="viewStart"
-        android:text="@string/switch_bar_on" />
+    <LinearLayout
+        android:id="@+id/switch_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/dot_switchbar_background"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
 
-    <Switch
-        android:id="@android:id/switch_widget"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:background="@null"
-        android:theme="@style/MotoActions.SwitchBar" />
+        <TextView android:id="@+id/switch_text"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            android:textColor="?android:attr/textColorPrimaryInverse"
+            android:textSize="18sp"
+            android:textAlignment="viewStart" />
+
+        <Switch
+            android:id="@android:id/switch_widget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:theme="@style/MotoActions.SwitchBar" />
+
+    </LinearLayout>
 
 </LinearLayout>

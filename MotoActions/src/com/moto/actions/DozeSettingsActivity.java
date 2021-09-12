@@ -17,9 +17,10 @@
 package com.moto.actions;
 
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 
-public class DozeSettingsActivity extends PreferenceActivity {
+import com.moto.actions.MonetPreferenceActivity;
+
+public class DozeSettingsActivity extends MonetPreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
