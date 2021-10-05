@@ -468,4 +468,6 @@
         <item>0:2:15</item>
     </string-array>
 
+     <!-- this device supports smart charging -->
+    <bool name="config_smartChargingVisibility">true</bool>
 </resources>
