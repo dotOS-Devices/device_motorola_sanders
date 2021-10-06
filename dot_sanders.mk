@@ -42,10 +42,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="sanders" \
     PRIVATE_BUILD_DESC="sanders-user 8.1.0 OPS28.65-36 9fea release-keys"
 
-# AICP Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Lucas Ponez (Pintoslp)"
-
 # for specific
 $(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
 
