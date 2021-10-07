@@ -25,6 +25,12 @@ $(call inherit-product, device/motorola/sanders/device.mk)
 # Inherit some common dotOS stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
 
+#Gapps
+TARGET_GAPPS_ARCH := arm64
+
+#Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
