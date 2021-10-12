@@ -5,7 +5,7 @@
   },
   {
     "repository":  "proprietary_vendor_motorola_sanders",
-    "target_path": "vendor/motorola_sanders"
+    "target_path": "vendor/motorola/sanders"
   },
   {
     "repository":  "android_packages_resources_devicesettings-custom",
